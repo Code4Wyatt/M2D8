@@ -24,7 +24,7 @@
             EX2) Write a selector to target every children of the navbar
 
             EX3) Write a selector to target the "continue reading..." inside the jumbotron
-            
+
             EX4) Write a selector to target the first blogpost
             EX5) Write a selector to target the "even" links in the navbar
             EX6) Write a selector to target the last blog post
@@ -38,9 +38,14 @@
                 color: red;
         }
 
-        nav {
-         background-color: rgb(212, 212, 214);
+        nav * {
+         background-color: rgb(3, 3, 224);
         }
+
+        .jumbotron:last-child {
+            color:coral
+        }
+
 
 
     </style>
@@ -157,8 +162,7 @@
           </p>
           <p class="lead mb-0">
             <a href="#" class="text-white font-weight-bold"
-              >Continue reading...</a
-            >
+              >Continue reading...</a>
           </p>
         </div>
       </div>
