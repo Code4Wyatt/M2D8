@@ -15,6 +15,7 @@
             EX7) Write a selector to target all the li in the first ordered-list in the sidebar ( Archives )
 
             EX8) Write a selector to target the second post author
+
             EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
             EX10) Write a selector to target the footer
         */
@@ -22,7 +23,7 @@
 
 
 div > h1 {
-    color: rgb(163, 53, 53);
+    color: rgb(245, 121, 20);
 }
 
 nav * {
@@ -45,6 +46,11 @@ div.blog-post:last-of-type {
     background-color: rgb(207, 205, 205)!important;
 }
 
-ol[class~="list-unstyled"] {
+main .blog-sidebar div:nth-child(2) > ol > li {
     border-style: solid;
+    border-width: 1px;
+}
+
+main .blog-post:nth-child(3) .blog-post-meta {
+    background-color:rgb(226, 164, 82) !important;
 }
