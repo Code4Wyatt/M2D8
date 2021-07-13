@@ -34,7 +34,8 @@ changeColor();
 
 const changeJumbo = function () {
     const getJumbo = document.querySelector(".jumbotron")
-    getJumbo.classList.add("jumbackground");
+    getJumbo.classList.remove("bg-dark")
+    getJumbo.classList.add("jumbackground")
     
 }
 
