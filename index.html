@@ -17,36 +17,10 @@
 
   <head>
     <style>
-      /*
-            EX1) Write a selector to target the h1 in jumbotron
+      
 
-            
-            EX2) Write a selector to target every children of the navbar
-
-            EX3) Write a selector to target the "continue reading..." inside the jumbotron
-
-            EX4) Write a selector to target the first blogpost
-            EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
-            EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
-            EX10) Write a selector to target the footer
-        */
-
-        div > h1 {
-                color: red;
-        }
-
-        nav * {
-         background-color: rgb(175, 175, 175);
-        }
-
-        .jumbotron:last-child {
-            color:coral;
-        }
-
-
+       
+        
 
     </style>
     <meta charset="utf-8" />
@@ -61,7 +35,7 @@
     />
     <meta name="generator" content="Jekyll v3.8.5" />
     <title>Blog Template · Bootstrap</title>
-
+    <link rel="stylesheet" href="style.css">
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.3/examples/blog/"
@@ -161,8 +135,7 @@
             contents.
           </p>
           <p class="lead mb-0">
-            <a href="#" class="text-white font-weight-bold"
-              >Continue reading...</a>
+            <a href="#" title="continue" class="text-white font-weight-bold">Continue reading...</a>
           </p>
         </div>
       </div>
