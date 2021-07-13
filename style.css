@@ -17,6 +17,7 @@
             EX8) Write a selector to target the second post author
 
             EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
+
             EX10) Write a selector to target the footer
         */
 
@@ -53,4 +54,13 @@ main .blog-sidebar div:nth-child(2) > ol > li {
 
 main .blog-post:nth-child(3) .blog-post-meta {
     background-color:rgb(226, 164, 82) !important;
+}
+
+.blog-footer > p:nth-child(2) a {
+    background-color: rgb(255, 127, 15) !important;
+    color: black;
+    padding: 5px;
+    position: relative;
+    left: 340px;
+
 }
