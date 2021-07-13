@@ -61,6 +61,10 @@ main .blog-post:nth-child(3) .blog-post-meta {
     color: black;
     padding: 5px;
     position: relative;
-    left: 340px;
+    left: 320px;
+}
 
+.blog-footer {
+    position: relative;
+    left: 340px;
 }
