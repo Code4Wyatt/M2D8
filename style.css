@@ -7,6 +7,7 @@
             EX3) Write a selector to target the "continue reading..." inside the jumbotron
 
             EX4) Write a selector to target the first blogpost
+
             EX5) Write a selector to target the "even" links in the navbar
             EX6) Write a selector to target the last blog post
             EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
@@ -29,6 +30,7 @@ background-color: rgb(175, 175, 175)!important;
     margin-left: 200px;
 }
 
-.blogpost {
-background-color: grey;
+div.blog-post:first-of-type {
+background-color: grey!important;
 }
+
