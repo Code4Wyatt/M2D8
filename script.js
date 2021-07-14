@@ -2,11 +2,11 @@
 //EX11) Write a function to add a new link into the navbar
 
 
-//EX14) Write a function to remove all the links under "Elsewhere"
-//EX15) Write a function to change the column size for heading in jumbotron
-//EX16) Write a function to remove the "Search" magnifying glass icon
-//EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
-//EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
+
+
+
+
+
 //EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 //EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
 // 
@@ -40,3 +40,53 @@ const changeJumbo = function () {
 }
 
 changeJumbo();
+
+//EX14) Write a function to remove all the links under "Elsewhere"
+
+const byeLinks = function () {
+    const links = document.querySelector(" .blog-sidebar > div:last-of-type ol ")
+
+
+
+links.innerHTML = "";
+}
+
+byeLinks();
+
+//EX15) Write a function to change the column size for heading in jumbotron
+
+const colSize = function () {
+    const heading = document.querySelector(".jumbotron h1")
+    heading.classList.remove("col-md-6")
+    heading.classList.add("col-md-412")
+}
+
+colSize();
+
+//EX16) Write a function to remove the "Search" magnifying glass icon
+
+const noSearch = function () {
+    const search = document.querySelector(".blog-header .row div:last-of-type")
+    search.children[0].remove();
+}
+
+noSearch();
+
+//EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
+
+const changeP = function () {
+    const paragraph = document.querySelector(".blog-main > p")
+    paragraph.substring(50);
+}
+
+changeP();
+
+//EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
+
+const addNewPost = function () {
+    const getDiv = document.querySelector(".blog-main")
+    const newPost = document.createElement("div")
+    newPost.innerHTML = "New Post"
+}
+
+addNewPost()
